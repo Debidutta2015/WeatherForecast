@@ -1,6 +1,6 @@
 {
-    "name": "express-HelloWorld",
-    "description": "Hello World Node Express web application",
+    "name": "express-WeatherForecast",
+    "description": "Weather Forecast Node Express web application",
     "version": "0.0.1",
     "private": true,
     "dependencies": {
@@ -10,11 +10,10 @@
     },
     "devDependencies": {
         "mocha": "5.0.0",
-        "unit.js": "2.0.0",
-        "supertest": "3.0.0"
+        "nodemon": "^1.19.1"
     },
     "scripts": {
         "start": "node src/app.js",
-        "test": "mocha --recursive tests --exit"
+        "dev": "nodemon src/app.js -e js,hbs"
     }
 }
